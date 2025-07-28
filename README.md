@@ -67,13 +67,25 @@ def heapify(arr, n, i):
         arr[i], arr[maior] = arr[maior], arr[i]
         heapify(arr, n, maior)
 
+
 def heap_sort(arr):
     n = len(arr)
+    # Construir heap máximo
     for i in range(n // 2 - 1, -1, -1):
         heapify(arr, n, i)
+    # Extrair elementos um a um
     for i in range(n - 1, 0, -1):
-        arr[i], arr[0] = arr[0], arr[i]
+        print(f"Swap {arr[0]} com {arr[i]}")  # indentação corrigida
+        arr[0], arr[i] = arr[i], arr[0]
         heapify(arr, i, 0)
+        print("Estado atual:", arr)
+
+
+if __name__ == "__main__":
+    exemplo = [12, 11, 13, 5, 6, 7]
+    print("Antes:", exemplo)
+    heap_sort(exemplo)
+    print("Depois:", exemplo)
 
 ```
 ---
