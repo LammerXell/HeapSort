@@ -101,7 +101,7 @@ Ordenação Final
 |Quick Sort	|❌	      |✅	      |O(n²)      |
 
 ---
-## Vantagens
+## ✔ Vantagens
 - Desempenho garantido: O(n log n)
 - Uso eficiente da memória: In-place
 
@@ -115,7 +115,9 @@ Ordenação Final
 - Ideal quando o pior caso precisa ser controlado
 - Não indicado se a estabilidade for importante
 ---
-## Visualização da execução
-🔗 Acesse o passo a passo:
-
-https://visualgo.net/en/heap
+## 🎯 Demonstração prática:
+Acesse: [https://visualgo.net/en/heap](https://visualgo.net/en/heap)  
+1. Canto inferior esquerdo clique em “Create”  
+2. Insira: `80 70 60 50 40 30 20 10`  
+3. Selecione “Max-Heap”  
+4. Use “ExtractMax” para simular o Heap Sort passo a passo  
